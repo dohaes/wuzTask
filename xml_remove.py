@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 desc = []
 job_requirement = []
 
-data_frame = pandas.read_csv("akhermara2.csv",encoding="ISO-8859-1")
+data_frame = pandas.read_csv("wuzzuf.csv",encoding="ISO-8859-1")
 
 for index, row in data_frame.iterrows():
       soup = BeautifulSoup(row['description'],"lxml")
